@@ -12,59 +12,114 @@
          <li><a href="profile.html">My Profile</a></li>
      </ul>
         <h1>This is my personal dashboard</h1>
-        <table class="table table-bordered table-striped" id="gradeTable">
-            <thead class="thead-dark">
-              <tr>
-                <th scope="col" class="checkbox-col"><input class="form-control" type="checkbox" id="select-all" /></th>
-                <th scope="col" class="name-col sortable" data-field="name">Name <span class="sort-arrow"></span></th>
-                <th scope="col" class="grade-col sortable" data-field="grade">Grade <span class="sort-arrow"></span></th>
-                <th scope="col" class="options-col"></th>
-              </tr>
-            </thead>
-            <tbody>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td class="checkbox-col"><i class="fas fa-trash-alt" id="delete-all-checked-btn"></i></td>
-                <td><input type="text" form="studentForm" id="name-field" name="name" class="form-control" placeholder="Student Name" required /></td>
-                <td class="grade-col"><input type="number" form="studentForm" name="grade" class="form-control" placeholder="Grade" id="grade-field" required />
-                  <button type="submit" form="studentForm" class="btn btn-success">+</button></td>
-                <td><span id="average">0</span></td>
-              </tr>
-            </tfoot>
-          </table>
-          <form id="studentForm"></form>
-          <table>
-            <tr>
-              <th>Quartile</th>
-              <th>Course</th>
-              <th>Assignment / Exam</th>
-              <th>Weight</th>
-              <th>Personal Score</th>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>PCO</td>
-              <td>Website Showcase</td>
-              <td>5 EC</td>
-              <td> ? </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>PCO</td>
-              <td>Website Showcase</td>
-              <td>5 EC</td>
-              <td> ? </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>PCO</td>
-              <td>Website Showcase</td>
-              <td>5 EC</td>
-              <td> ? </td>
-            </tr>
-            
-          </table>
+        <table>
+					<tbody><tr>
+						<th>Quartile</th>
+						<th>Course</th>
+						<th>EC</th>
+						<th>Exam</th>
+						<th>Grade</th>
+					</tr>
+					<tr>
+						<td rowspan="3">1</td>
+						<td>PCO</td>
+						<td>2.5</td>
+						<td>Assessment</td>
+						<td> - </td>
+					</tr>
+					<tr>
+						<td>CSB</td>
+						<td>5</td>
+						<td>Exam</td>
+						<td> - </td>
+					</tr>
+					<tr>
+						<td>PBa</td>
+						<td>5</td>
+						<td>Exam</td>
+						<td> - </td>
+					</tr>
+					<tr>
+						<td rowspan="2">2</td>
+						<td rowspan="2">OOP</td>
+						<td rowspan="2">10</td>
+						<td>Presentation</td>
+						<td> - </td>
+					</tr>
+					<tr>
+						<td>Exam</td>
+						<td> - </td>
+					</tr>
+					<tr>
+						<td rowspan="4">3</td>
+						<td rowspan="4">FWP 1</td>
+						<td rowspan="4">10</td>
+						<td>Exam</td>
+						<td> - </td>
+					</tr>
+					<tr>
+						<td>Exam</td>
+						<td> - </td>
+					</tr>
+					<tr>
+						<td>Presentation</td>
+						<td> - </td>
+					</tr>
+					<tr>
+						<td>Portfolio</td>
+						<td> - </td>
+					</tr>
+					<tr>
+						<td rowspan="3">4</td>
+						<td rowspan="3">FWP 2</td>
+						<td rowspan="3">10</td>
+						<td>Portfolio</td>
+						<td> - </td>
+					</tr>
+					<tr>
+						<td>Portfolio</td>
+						<td> - </td>
+					</tr>
+					<tr>
+						<td>Portfolio</td>
+						<td> - </td>
+					</tr>
+					<tr>
+						<td>3, 4</td>
+						<td>BITC</td>
+						<td>2.5</td>
+						<td>Assessment</td>
+						<td> - </td>
+					</tr>
+					<tr>
+						<td rowspan="5">1 - 4</td>
+						<td>PPDE</td>
+						<td>12.5</td>
+						<td>Assessment</td>
+						<td> - </td>
+					</tr>
+					<tr>
+						<td rowspan="4">ITP</td>
+						<td>1.25</td>
+						<td>Portfolio</td>
+						<td> - </td>
+					</tr>
+					<tr>
+						<td>1.25</td>
+						<td>Portfolio</td>
+						<td> - </td>
+					</tr>
+					<tr>
+						<td>1.25</td>
+						<td>Portfolio</td>
+						<td> - </td>
+					</tr>
+					<tr>
+						<td>1.25</td>
+						<td>Portfolio</td>
+						<td> - </td>
+					</tr>
+				</tbody></table>
           <div id="page-container">
             <div id="content-wrap">
             </div>
