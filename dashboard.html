@@ -3,6 +3,27 @@
         <link href="style.css" rel="stylesheet" type="text/css">
         <title>Dashboard</title>
     <body>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<ol><li><a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/OER-HZ-Bacheloropleidingen-voltijd-2023-2024-DEF-versie-20230720.pdf">Course and Examination regulation</a></li>
+			<li><a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">Implementation Regulations</a></li>
+			<li><a href="https://learn.hz.nl/my/">Learn</a></li>
+			<li><a href="https://www.manutd.com/">Teams</a></li>
+			<li><a href="https://hz.nl/en/secure/for-students/in-need-of-support/study-choice-and-study-progress">Study progress</a></li>
+			<li><a href="https://github.com/HZ-HBO-ICT">Github</a></li></ol>
+		  </div>
+		  
+		  
+		  <span style="font: size 50px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+		  
+		  <script>
+		  function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+		  }
+		  
+		  function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		  } </script>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li>
@@ -12,119 +33,146 @@
          <li><a href="profile.html">My Profile</a></li>
      </ul>
         <h1>This is my personal dashboard</h1>
-        <table>
-					<tbody><tr>
-						<th>Quartile</th>
-						<th>Course</th>
-						<th>EC</th>
-						<th>Exam</th>
-						<th>Grade</th>
-					</tr>
-					<tr>
-						<td rowspan="3">1</td>
-						<td>PCO</td>
-						<td>2.5</td>
-						<td>Assessment</td>
-						<td> - </td>
-					</tr>
-					<tr>
-						<td>CSB</td>
-						<td>5</td>
-						<td>Exam</td>
-						<td> - </td>
-					</tr>
-					<tr>
-						<td>PBa</td>
-						<td>5</td>
-						<td>Exam</td>
-						<td> - </td>
-					</tr>
-					<tr>
-						<td rowspan="2">2</td>
-						<td rowspan="2">OOP</td>
-						<td rowspan="2">10</td>
-						<td>Presentation</td>
-						<td> - </td>
-					</tr>
-					<tr>
-						<td>Exam</td>
-						<td> - </td>
-					</tr>
-					<tr>
-						<td rowspan="4">3</td>
-						<td rowspan="4">FWP 1</td>
-						<td rowspan="4">10</td>
-						<td>Exam</td>
-						<td> - </td>
-					</tr>
-					<tr>
-						<td>Exam</td>
-						<td> - </td>
-					</tr>
-					<tr>
-						<td>Presentation</td>
-						<td> - </td>
-					</tr>
-					<tr>
-						<td>Portfolio</td>
-						<td> - </td>
-					</tr>
-					<tr>
-						<td rowspan="3">4</td>
-						<td rowspan="3">FWP 2</td>
-						<td rowspan="3">10</td>
-						<td>Portfolio</td>
-						<td> - </td>
-					</tr>
-					<tr>
-						<td>Portfolio</td>
-						<td> - </td>
-					</tr>
-					<tr>
-						<td>Portfolio</td>
-						<td> - </td>
-					</tr>
-					<tr>
-						<td>3, 4</td>
-						<td>BITC</td>
-						<td>2.5</td>
-						<td>Assessment</td>
-						<td> - </td>
-					</tr>
-					<tr>
-						<td rowspan="5">1 - 4</td>
-						<td>PPDE</td>
-						<td>12.5</td>
-						<td>Assessment</td>
-						<td> - </td>
-					</tr>
-					<tr>
-						<td rowspan="4">ITP</td>
-						<td>1.25</td>
-						<td>Portfolio</td>
-						<td> - </td>
-					</tr>
-					<tr>
-						<td>1.25</td>
-						<td>Portfolio</td>
-						<td> - </td>
-					</tr>
-					<tr>
-						<td>1.25</td>
-						<td>Portfolio</td>
-						<td> - </td>
-					</tr>
-					<tr>
-						<td>1.25</td>
-						<td>Portfolio</td>
-						<td> - </td>
-					</tr>
-				</tbody></table>
-          <div id="page-container">
-            <div id="content-wrap">
-            </div>
-            <footer id="footer">Author: Brandon Murambinda</footer>
-          </div>
+        <table style="height: 60%;">
+			<tr id="rows">
+				<th>Quartile</th>
+				<th>Course</th>
+				<th>European Credits</th>
+				<th>Assesment</th>
+				<th>Grade</th>
+			</tr>
+	
+			<!--FIRST QUARTILE-->
+			<tr id="rows">
+				<td rowspan="3">First Quartile</td>
+				<td>Program- & Career Orientation (PCO):</td>
+				<td>2.5 EC</td>
+				<td>Assessment website</td>
+				<td><input type="number" id="grade" name="grade" max="10" min="1"></td>
+			</tr>
+			<tr id="rows">
+				<td>Computer Science Basics</td>
+				<td>5 EC</td>
+				<td>Written exam</td>
+				<td><input type="number" id="grade" name="grade" max="10" min="1"></td>
+			</tr>
+			<tr id="rows">
+				<td>Programming Basics</td>
+				<td>5 EC</td>
+				<td>Case study exam</td>
+				<td><input type="number" id="grade" name="grade" max="10" min="1"></td>
+			</tr>
+			
+			
+	
+	
+	
+			<!--SECOND QUARTILE-->
+			<tr id="rows">
+				<td rowspan="2">Second Quartile</td>
+				<td rowspan="2">Object-Oriented Programming</td>
+				<td rowspan="2">10 EC</td>
+				<td>Group assignment</td>
+				<td><input type="number" id="grade" name="grade" max="10" min="1"></td>
+			</tr>
+			<tr id="rows">
+				<td>Case study exam</td>
+				<td><input type="number" id="grade" name="grade" max="10" min="1"></td>
+			</tr>
+			
+	
+	
+			<!--THIRD QUARTILE-->
+			<tr id="rows">
+				<td rowspan="6">Third Quartile</td>
+			</tr>
+			<tr id="rows">
+				<td rowspan="4">Framework project 1</td>
+				<td rowspan="4">10 EC</td>
+				<td>On-site case study exam</td>
+				<td><input type="number" id="grade" name="grade" max="10" min="1"></td>
+			</tr>
+			<tr id="rows">
+				<td>Database exam</td>
+				<td><input type="number" id="grade" name="grade" max="10" min="1"></td>
+			</tr>
+			<tr>
+				<td>Group presentation on project result</td>
+				<td><input type="number" id="gradetest" name="grade" max="10" min="1"></td>
+			</tr>
+			<tr id="rows">
+				<td>Group portfolio with individual elements on requirements</td>
+				<td><input type="number" id="grade" name="grade" max="10" min="1"></td>
+			</tr>
+			<tr id="rows">
+				<td>Business IT Consultancy basics</td>
+				<td>2.5 EC</td>
+				<td>Video</td>
+				<td><input type="number" id="grade" name="grade" max="10" min="1"></td>
+			</tr>
+	
+	
+	
+	
+			<!--FOURTH QUARTILE-->
+			<tr id="rows">
+				<td rowspan="4">Fourth Quartile</td>
+				<td rowspan="3">Framework project 2</td>
+				<td rowspan="3">10 EC</td>
+				<td>Final delivery</td>
+				<td><input type="number" id="grade" name="grade" max="10" min="1"></td>
+			</tr>
+			<tr id="rows">
+				<td>Report of acceptance tests and optional assessments</td>
+				<td><input type="number" id="grade" name="grade" max="10" min="1"></td>
+			</tr>
+			<tr id="rows">
+				<td>IT Development portfolio</td>
+				<td><input type="number" id="gradetest" name="grade" max="10" min="1"></td>
+			</tr>
+			<tr id="rows">
+				<td>Personal Professional Development Exploration</td>
+				<td>12.5 EC</td>
+				<td>Criterium focused interview</td>
+				<td><input type="number" id="grade" name="grade" max="10" min="1"></td>
+			</tr>
+	
+	
+	
+			<tr id="rows">
+				<td rowspan="4">Additional courses</td>
+				<td>IT Personality- projectweek 1</td>
+				<td>1.25 EC</td>
+				<td>Portfolio</td>
+				<td><input type="radio" id="grade"></td>
+				
+			</tr>
+			<tr id="rowsw">
+				<td>IT Personality International week</td>
+				<td>1.25 EC</td>
+				<td>Portfolio</td>
+				<td><input type="radio" id="grade"></td>
+				
+			</tr>
+			<tr id="rows">
+				<td>IT Personality 1</td>
+				<td>1.25 EC</td>
+				<td>Portfolio</td>
+				<td><input type="radio" id="grade"></td>
+				
+			</tr>
+			<tr id="rows">
+				<td>IT Personality 2</td>
+				<td>1.25 EC</td>
+				<td>Portfolio</td>
+				<td><input type="radio" id="grade"></td>
+				
+			</tr>
+		</table>
+		<div class="progress">
+			<label for="file"> Study Credits:</label>
+			<progress id="file" value="2.5" max="60">4.1%</progress>
+		</div>
           
 
     </body>
