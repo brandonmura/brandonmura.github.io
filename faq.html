@@ -1,21 +1,50 @@
-<html>
-    <head>
-        <link href="faq.css" rel="stylesheet" type="text/css">
-        <title>FAQ</title>
-    <body>
-      <ul>
-         <li><a href="index.html">Home</a></li>
-         <li>
-          <a href="dashboard.html">Dashboard</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="profile.html">My Profile</a></li>
-      </ul>
-      <h1>Frequently Asked Questions</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Frequenty Asked Questions</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="faq.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<script src="sideNav.js"></script>
+</head>
+
+<body>
+	<div id="page-container">
+		<div id="content-wrap">
+			<nav class="navBar">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="dashboard.html">Dashboard</a></li>
+					<li><a href="profile.html">Profile</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="faq.html" class="activePage">FAQ</a></li>
+					<li id="openSideNavBtn" onclick="openSideNav()">
+						<p class="fas fa-bars fa-lg"></p>
+					</li>
+				</ul>
+			</nav>
+
+			<div id="mySideNav" class="sideNav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
+				<a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/OER-HZ-Bacheloropleidingen-voltijd-2023-2024-DEF-versie-20230720.pdf">Course and Examination regulation</a>
+				<a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">Implementation Regulations</a>
+				<a href="https://learn.hz.nl/my/">Learn</a>
+				<a href="https://teams.microsoft.com/l/team/19%3a2e2afa0286b04932be16cb8ad2d9d2c0%40thread.skype/conversations?groupId=95bddebc-a340-4d88-81fc-b80e0bfc70c3&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c">Teams</a>
+				<a href="https://hz.nl/en/secure/for-students/in-need-of-support/study-choice-and-study-progress">Study progress</a>
+				<a href="https://github.com/HZ-HBO-ICT">Github</a>
+			</div>
+			<main>
+
+				<h1>Frequently Asked Questions</h1>
       <details>
          <summary>1. How can you print a document from your laptop at HZ?</summary>
          <div>
-        You can go to the printing room and print.
+			You go to <a href="https://hz.mynetpay.nl/WebPrint" target="_blank">hz.mynetpay.nl/webprint</a> and log in with your student credentials.
+			 You upload the document and select the print settings. 
+			 After that, you go to the printer rooms and scan your card on a printer, which triggers the print job.
          </div>
        </details>
        <details>
@@ -27,13 +56,14 @@
        <details>
          <summary>3. How can you scan a document and send it to your laptop at HZ?</summary>
          <div>
-        Connect your email to the scanner and send.
+		   You put a document in the scanner, scan your card and the document will be sent to your email.
          </div>
        </details>
        <details>
          <summary>4. How can I buy something (like when I sign up for the IT introduction event) on the HZ web shop?</summary>
          <div>
-        You sign up using your details and submit.
+			You open <a href="https://webshop.hz.nl/WebshopApp/defaulten.aspx?menu=082076044027019251066025111065201099237062130097" target="_blank">the webshop</a> from your personal My HZ menu (after adding it), and select your item.
+			Then you go to your shopping cart and check out.
          </div>
        </details>
        <details>
@@ -42,10 +72,11 @@
         Email relevant authorities in time and book.
          </div>
        </details>
+			</main>
        <div id="page-container">
         <div id="content-wrap">
         </div>
         <footer id="footer">Author: Brandon Murambinda</footer>
       </div>
     </body>
-   
+</html>

@@ -1,16 +1,64 @@
-<html>
-    <head>
-        <link href="style.css" rel="stylesheet" type="text/css">
-        <title>Programming experience</title>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Programming Experience</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="blogPost.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<script src="sideNav.js"></script>
+</head>
+
+<body>
+	<div id="page-container">
+		<div id="content-wrap">
+			<nav class="navBar">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="dashboard.html">Dashboard</a></li>
+					<li><a href="profile.html">Profile</a></li>
+					<li><a href="blog.html" class="activePage">Blog</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li id="openSideNavBtn" onclick="openSideNav()">
+						<p class="fas fa-bars fa-lg"></p>
+					</li>
+				</ul>
+			</nav>
+
+			<div id="mySideNav" class="sideNav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
+				<a
+					href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/OER-HZ-Bacheloropleidingen-voltijd-2023-2024-DEF-versie-20230720.pdf">Course
+					and Examination regulation</a>
+				<a
+					href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">Implementation
+					Regulations</a>
+				<a href="https://learn.hz.nl/my/">Learn</a>
+				<a
+					href="https://teams.microsoft.com/l/team/19%3a2e2afa0286b04932be16cb8ad2d9d2c0%40thread.skype/conversations?groupId=95bddebc-a340-4d88-81fc-b80e0bfc70c3&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c">Teams</a>
+				<a href="https://hz.nl/en/secure/for-students/in-need-of-support/study-choice-and-study-progress">Study
+					progress</a>
+				<a href="https://github.com/HZ-HBO-ICT">Github</a>
+			</div>
+
+			<main>
+				<div class="pageContainer">
+					<div class="postContainer">
+					<img src="https://picsum.photos/200/300" style="height: 500px; width: 500px;"/>
         <h1>What is my programming experience?
             </h1>
             <p1>
-                <li>Worked with a team of 7 programmers to develop a risk management system that reduced portfolio volatility by 9.4% for all clients. </li> 
-                <li>Led the main team in migrating 16+ projects to a new Git repository structure, improving codebase organization.</li>
+                <li>I have a certification in an ICDL python course from 2018.</li> 
+                <li>Programmed for CISCO networking academy in 2022.</li>
                 <li>Maintained 4 trading algorithms, helping clients increase their portfolio returns by 13%.</li>
-                 <li>Updated a legacy codebase of 436K lines, improving overall functionality and reducing crash instances by 52%.</li>
+                <li>Updated a legacy codebase of 436K lines, improving overall functionality and reducing crash instances by 52%.</li>
             </p1>
+      </main>
+          </div>
+          <footer>Author: Tawananyasha Brandon Murambinda</footer>
+        </div>
     </body>
-    </head>
+    
 </html>

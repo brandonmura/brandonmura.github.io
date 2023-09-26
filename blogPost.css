@@ -1,0 +1,20 @@
+.pageContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: left;
+	justify-content: left;
+}
+
+.postContainer {
+	text-align: left;
+}
+
+
+.postContainer .blogPostTitle{
+	font-size: 2rem;
+	font-weight: bold;
+	justify-content: center;
+}
+
+
+

@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <ol><li><a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/OER-HZ-Bacheloropleidingen-voltijd-2023-2024-DEF-versie-20230720.pdf">Course and Examination regulation</a></li>
-      <li><a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">Implementation Regulations</a></li>
-      <li><a href="https://learn.hz.nl/my/">Learn</a></li>
-      <li><a href="https://www.manutd.com/">Teams</a></li>
-      <li><a href="https://hz.nl/en/secure/for-students/in-need-of-support/study-choice-and-study-progress">Study progress</a></li>
-      <li><a href="https://github.com/HZ-HBO-ICT">Github</a></li></ol>
-    </div>
-    
-    
-    <span style="font: size 50px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-    
-    <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-    }
-    
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    } </script>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li>
-       <a href="dashboard.html">Dashboard</a></li>
-       <li><a href="faq.html">FAQ</a></li>
-       <li><a href="blog.html">Blog</a></li>
-       <li><a href="profile.html">My Profile</a></li>
-   </ul>
-    <link href="style.css" rel="stylesheet" type="text/css">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hello World Task</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <p1>I am Tawananyasha Murambinda (Brandon is my second name so I know you will find it easier to call me that). I am 19 years old and originally from Zimbabwe.</p1>
-    <h2>More about me:</h2>
-    <img src="me.jpg" sizes="30px" width="500" height="500"/>
-    <ol>
-      <li>I like to listen to music, I'm a fan of pop, rap and rock.</li>
-      <br>
-      <li>I'm a hockey player, I've played at national level.</li>
-      <br>
-      <li>I live for football.</li>
-    </ol>
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="sideNav.js"></script>
+</head>
+
+<body>
     <div id="page-container">
-      <div id="content-wrap">
-      </div>
-      <footer id="footer">Author: Brandon Murambinda</footer>
+        <div id="content-wrap">
+            <nav class="navBar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="profile.html" class="activePage">Profile</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li id="openSideNavBtn" onclick="openSideNav()">
+                        <p class="fas fa-bars fa-lg"></p>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="mySideNav" class="sideNav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
+				<a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/OER-HZ-Bacheloropleidingen-voltijd-2023-2024-DEF-versie-20230720.pdf">Course and Examination regulation</a>
+				<a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">Implementation Regulations</a>
+				<a href="https://learn.hz.nl/my/">Learn</a>
+				<a href="https://teams.microsoft.com/l/team/19%3a2e2afa0286b04932be16cb8ad2d9d2c0%40thread.skype/conversations?groupId=95bddebc-a340-4d88-81fc-b80e0bfc70c3&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c">Teams</a>
+				<a href="https://hz.nl/en/secure/for-students/in-need-of-support/study-choice-and-study-progress">Study progress</a>
+				<a href="https://github.com/HZ-HBO-ICT">HZ Github</a>
+			</div>
+            
+            <main>
+
+                <h1>Hello, World!</h1>
+                <p1 style="max-width: 50%">I am Tawananyasha Murambinda (Brandon is my second name so I know you will find it easier to call me that).
+                    I am 19 years old and originally from Zimbabwe. I've lived in England for the past 5 years and unfortunately
+                    I've only seen sunlight in only 3 days during that time. :(</p1>
+                <br>
+                <img src="me.jpg" style="height: 500px; width: 400px;">
+
+                <ol>
+                    <li>I like to listen to music, I'm a fan of pop, rap and rock.</li>
+                    <br>
+                    <li>I'm a hockey player, I've played at national level.</li>
+                    <br>
+                    <li>I live for football.</li>
+                  </ol>
+            </main>
+        </div>
+        <footer>Author: Tawananyasha Brandon Murambinda</footer>
     </div>
-  </body>
-  
+</body>
+
 </html>

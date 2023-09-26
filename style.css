@@ -1,119 +1,144 @@
-
 body {
-  font-family: 'Open Sans', sans-serif;
-  color:whitesmoke;
-  background-color:blue;
-  overflow-x: hidden;
-}
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: blue;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 36px;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+	background-position: center;
+	background-size: contain;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-color:skyblue;
 
 }
+h1 {
+	font-style: italic;
+	text-decoration: underline;
+	color: orangered;
+}
+h2{
+	font-weight: bold;
+}
+h3{
+	color: darkblue;
+}
+p{
+	font-style: oblique;
+	font-weight: bold;
+}
+p1{
+	font-weight: bold;
+	font-style: initial;
+}
 
-li {
-  float: left;
-}
-li:last-child {
-  border-right: none;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.navBar {
+	position: sticky;
+	top: 0;
+	background-color: blue;
+	color: white;
+	margin: 0 auto;
+	overflow: hidden;
 }
 
-li a:hover {
-  background-color: green;
+.navBar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
 }
-.active {
-  background-color: #04AA6D;
-}#page-container {
-  position: relative;
-  min-height: 100vh;
+
+.navBar li {
+	float: left;
+}
+
+.navBar li a {
+	display: block;
+	color: whitesmoke;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+}
+
+.navBar li a:hover:not(.activePage) {
+	background-color:#000;
+	color:whitesmoke;
+}
+
+.navBar .activePage {
+	background-color:grey;
+	color:whitesmoke;
+}
+
+#openSideNavBtn {
+	float: right;
+	margin: 0px 20px;
+	opacity: 1;
+	font-weight: bold;
+	vertical-align: middle;
+	transition: all 0.3s ease;
+}
+.sideNav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color:skyblue;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 1ms;
+}
+.sideNav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color:whitesmoke;
+	display: block;
+	transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sideNav a:hover {
+	color: blue;
+}
+
+/* Position and style the close button (top right corner) */
+.sideNav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+
+#page-container {
+	position: relative;
+	min-height: 100vh;
 }
 
 #content-wrap {
-  padding-bottom: 2.5rem;}
+	margin-left: auto;
+	padding-bottom: 2.5rem;
+}
 
-#footer {
+main {
+	padding: 50px;
+	margin: 0 auto;
+}
+
+footer {
 	width: 100%;
 	height: 2.5rem;
 	bottom: 0px;
 	background-color: #000;
 	color: #fff;
 	font-size: 14px;
-  position: absolute;
 	font-weight: normal;
+	position: absolute;
 	text-align: center;
 }
 
-#footer a {
+footer a {
 	display: inline-block;
 	color: #fff;
 	line-height: 2.5rem;
 	vertical-align: middle;
-}
-table, th, td {
-	border: 1px solid #000;
-}
-label {
-  padding-right: 10px;
-  font-size: 1rem;
-}
-.passed {
-	background-color: #00ff00;
-}
-.failed {
-	background-color: #ff0000;
-}
-.notTaken {
-	background-color: yellow;
 }

@@ -1,56 +1,71 @@
-<html> 
-    <head>
-        <link href="style.css" rel="stylesheet" type="text/css">
-        <title>Index page</title>
-    </head>
-    <body>
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <ol><li><a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/OER-HZ-Bacheloropleidingen-voltijd-2023-2024-DEF-versie-20230720.pdf">Course and Examination regulation</a></li>
-        <li><a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">Implementation Regulations</a></li>
-        <li><a href="https://learn.hz.nl/my/">Learn</a></li>
-        <li><a href="https://www.manutd.com/">Teams</a></li>
-        <li><a href="https://hz.nl/en/secure/for-students/in-need-of-support/study-choice-and-study-progress">Study progress</a></li>
-        <li><a href="https://github.com/HZ-HBO-ICT">Github</a></li></ol>
-      </div>
-      
-      
-      <span style="font: size 50px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-      
-      <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-      }
-      
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      } </script>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-       <li>
-        <a href="dashboard.html">Dashboard</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="profile.html">My Profile</a></li>
-    </ul>
-    <h1>The ICT field and studying at HZ</h1>
-        <h2><img src="hzlogo.jpg" width="100" height="100"/></h2>
-       <p>I joined the ICT study at HZ University because of the deep love I have for computers and all to do with them. I've always been on a computer for my entire life and it was always a passion for me to further my understanding and knowledge of the smallest components that make up the computer, both hardware and software. Coming to HZ gives me the opportunity to take advantage of the great facilities and amazing teachers to propel myself to greater ICT heights and fulfil my love and passion for the subject. The field of information technology deals with the application and innovation of technology to solve business problems and discover growth opportunities. Information technology is also one of today's fastest-growing and most in-demand fields of work, so it's easy to see why IT is one of the most popular areas of study for undergraduate students.</p>
-       <ol>
-        <li>ICT is a really fun subject</li>
-        <br>
-        <li>Computers are essential</li>
-        <br>
-        <li>Technology is the new norm</li>
-      </ol>
-       <br>
-       <p>Information technology is a versatile field full of ample opportunities for aspiring professionals to pursue a career path that aligns with their background, career goals, and professional and personal interests. Every industry is reliant on technology, which means there are - and will continue to be - extensive job opportunities for professionals who understand the latest technology and have niche experience or interest in the industry of a potential employer.</p>
-        <img src="ictpic1.jpg" width="650" height="433"/>. <img src="ictpic2.jpg" width="650" height="433"/>
-        <div id="page-container">
-          <div id="content-wrap">
-          </div>
-          <footer id="footer">Author: Brandon Murambinda</footer>
-        </div>
-    </body>
-    
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<script src="sideNav.js"></script>
+</head>
+
+<body>
+	<div id="page-container">
+		<div id="content-wrap">
+			<nav class="navBar">
+				<ul>
+					<li><a href="index.html" class="activePage">Home</a></li>
+					<li><a href="dashboard.html">Dashboard</a></li>
+					<li><a href="profile.html">Profile</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li id="openSideNavBtn" onclick="openSideNav()">
+						<p class="fas fa-bars fa-lg"></p>
+					</li>
+				</ul>
+			</nav>
+
+			<div id="mySideNav" class="sideNav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
+				<a
+					href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/OER-HZ-Bacheloropleidingen-voltijd-2023-2024-DEF-versie-20230720.pdf">Course
+					and Examination regulation</a>
+				<a
+					href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">Implementation
+					Regulations</a>
+				<a href="https://learn.hz.nl/my/">Learn</a>
+				<a
+					href="https://teams.microsoft.com/l/team/19%3a2e2afa0286b04932be16cb8ad2d9d2c0%40thread.skype/conversations?groupId=95bddebc-a340-4d88-81fc-b80e0bfc70c3&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c">Teams</a>
+				<a href="https://hz.nl/en/secure/for-students/in-need-of-support/study-choice-and-study-progress">Study
+					progress</a>
+				<a href="https://github.com/HZ-HBO-ICT">HZ Github</a>
+			</div>
+			<main>
+				<h1>Hey there, you've reached Brandon's website!</h1>
+				<div style="display: block; float: right;">
+					<img src="hzlogo.png" style="height: 200px;"/>
+				</div>
+
+				<h2>The ICT field and studying at HZ:</h2>
+
+				<p style="max-width: 50%">I joined the ICT study at HZ University because of the deep love I have for computers and all to do with them. I've always been on a computer for my entire life and it was always a passion for me to further my understanding and knowledge of the smallest components that make up the computer, both hardware and software. Coming to HZ gives me the opportunity to take advantage of the great facilities and amazing teachers to propel myself to greater ICT heights and fulfil my love and passion for the subject. The field of information technology deals with the application and innovation of technology to solve business problems and discover growth opportunities. Information technology is also one of today's fastest-growing and most in-demand fields of work, so it's easy to see why IT is one of the most popular areas of study for undergraduate students.</p> <br>
+				<img src="ictpic1.jpg" style="height: 400px;"/> <img src="ictpic2.jpg" style="height: 400px;"/>
+				<p style="max-width: 50%">You can not separate me from a computer, whether it be a phone or gaming station. I really enjoy
+				trying and creating new codes and general programming. My passion coupled with the opportunity of being at HZ can only
+			    promise a really exciting future for me.</p> 
+
+				<p>Do you wanna know more about me? Contact me here:</p>
+					<ol>
+						<li><a href="https://www.instagram.com/muraaatthedoor">Instagram</a></li>
+						<li><a href="https://web.whatsapp.com">Whatsapp</a></li>
+					</ol>
+
+			</main>
+
+		</div>
+		<footer>Author: Tawananyasha Brandon Murambinda</footer>
+	</div>
+</body>
+
 </html>

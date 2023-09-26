@@ -1,11 +1,56 @@
-<html>
-    <head>
-        <link href="style.css" rel="stylesheet" type="text/css">
-        <title>Personal SWOT-analysis</title>
-    <body>
-        <h1>By making a SWOT-analysis, you analyze your personal strengths and weaknesses and make an inventory of the opportunities and threats you expect in your studies. 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal analysis</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="blogPost.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<script src="sideNav.js"></script>
+</head>
+
+<body>
+	<div id="page-container">
+		<div id="content-wrap">
+			<nav class="navBar">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="dashboard.html">Dashboard</a></li>
+					<li><a href="profile.html">Profile</a></li>
+					<li><a href="blog.html" class="activePage">Blog</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li id="openSideNavBtn" onclick="openSideNav()">
+						<p class="fas fa-bars fa-lg"></p>
+					</li>
+				</ul>
+			</nav>
+
+			<div id="mySideNav" class="sideNav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
+				<a
+					href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/OER-HZ-Bacheloropleidingen-voltijd-2023-2024-DEF-versie-20230720.pdf">Course
+					and Examination regulation</a>
+				<a
+					href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">Implementation
+					Regulations</a>
+				<a href="https://learn.hz.nl/my/">Learn</a>
+				<a
+					href="https://teams.microsoft.com/l/team/19%3a2e2afa0286b04932be16cb8ad2d9d2c0%40thread.skype/conversations?groupId=95bddebc-a340-4d88-81fc-b80e0bfc70c3&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c">Teams</a>
+				<a href="https://hz.nl/en/secure/for-students/in-need-of-support/study-choice-and-study-progress">Study
+					progress</a>
+				<a href="https://github.com/HZ-HBO-ICT">Github</a>
+			</div>
+
+			<main>
+				<div class="pageContainer">
+					<div class="postContainer">
+					<img src="https://picsum.photos/200/300" style="height: 500px; width: 500px;"/>
+        <h1>My personal SWOT analysis: 
         </h1>
-        <p>Strengths:
+        <p>
+            <h3>Strengths:</h3>
             <li>Enthusiasm to learn new things</li> 
             <li>Paying attention span in classes</li>
             <li>Suitability to longer working hours</li>
@@ -14,7 +59,7 @@
             </p>
             <br>
             <p>
-                Weaknesses:
+                <h3>Weaknesses:</h3>
                 <li>Work ethic is sometimes dependant on how I feel emotionally on a particular day</li> 
                 <li>Lack of enthusiasm to do after school work</li>
                 <li>May need more help from teachers than the average student</li>
@@ -22,15 +67,18 @@
             </p>
             <br>
             <p>
-                Opportunities; How can you turn your strengths / weaknesses into opportunities?
+                <h3>Opportunities; How can you turn your strengths / weaknesses into opportunities?</h3>
                 <li>For my weaknesses its recognizing them in the moment they are happening, accepting them and making steps to working on them to make them opportunities.</li> 
                 <li>With my strengths I just have to focus on them and work hard into making them opportunistic.</li>
             </p>
             <br>
             <p>
-                Threats; What obstacles do you face to succeed as a student? Could any of your weaknesses prevent you from succeeding in your studies / career?
+                 <h3>Threats; What obstacles do you face to succeed as a student? Could any of your weaknesses prevent you from succeeding in your studies / career?</h3>
                 <li>My weaknesses may be my greatest threats but I feel like I could work on them and stop them from preventing me to progress in my studies.</li>
             </p>
+          </main>
+    </div>
+    <footer>Author: Tawananyasha Brandon Murambinda</footer>
+  </div>
     </body>
-    </head>
 </html>
